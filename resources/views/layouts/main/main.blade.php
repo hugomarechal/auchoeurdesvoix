@@ -5,7 +5,7 @@
     <meta name="google" content="notranslate">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>@yield('title') - Au Chœur des Voix</title>
+    <title>@yield('title') - Carol's Events</title>
     <meta property="og:locale" content="{{ app()->getLocale() }}"/>
     <meta property="og:site_name" content="Au Chœur des voix">
     <meta property="og:title" content="@yield('title') - Au Chœur des voix"/>
@@ -48,9 +48,9 @@
 
 <body>
 {{-- header --}}
-@section('header')
+{{--@section('header')
     @include('layouts.main.partials.header', ['isReversed' => isset($isReversed)])
-@show
+@show--}}
 {{-- end header --}}
 
 {{-- content --}}
@@ -61,9 +61,9 @@
 </div>
 
 {{-- Footer --}}
-@section('footer')
+{{--@section('footer')
     @include('layouts.main.partials.footer')
-@show
+@show--}}
 {{-- footer --}}
 
 @stack('script_stack')
