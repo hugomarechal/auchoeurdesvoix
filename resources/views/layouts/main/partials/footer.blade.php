@@ -1,7 +1,12 @@
 <!-- Footer -->
 <footer class="z-10 bg-indigo-950 relative md:flex md:flex-col items-center">
     <div data-aos-duration="1200" data-aos="fade-up" class="mx-auto flex flex-col w-full items-center px-4 py-[80px] md:items-start md:justify-between md:flex-row md:px-[80px] lg:pt-[65px] lg:pr-[188px] lg:pb-[65px] lg:pl-[108px] lg:max-w-[1440px]">
+        <a href="{{route('home')}}" class="z-50">
+            <img class="w-[80px] lg:w-[120px] hover:scale-110 transition-all" src="{{ asset('images/logo_acdv.png') }}" alt="logo">
+        </a>
+{{--
     <h2 class="mb-2 text-3xl md:text-xl md:font-semibold text-white md:text-[50px] leading-[48px] lg:leading-[75px] font-outfit">Au Chœur des Voix</h2>
+--}}
         @php
             $content = [
                 "Pages" => ["Accueil" => "home", "À propos" => "about", "Me contacter" => "contact", "Mentions légales" => "mentions-legales"],

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="lg:!overflow-auto overflow-x-hidden" lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html class="lg:!overflow-auto overflow-x-hidden scroll-smooth" lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="UTF-8"/>
     <meta name="google" content="notranslate">

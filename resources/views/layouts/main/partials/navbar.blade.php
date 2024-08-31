@@ -1,8 +1,10 @@
 <nav class="-z-10 relative lg:max-w-[1260px] py-6 px-[26px] xl:px-0 xl:mx-auto w-full flex items-center justify-between">
-    {{--<a href="{{route('home')}}" class="z-50">
-        <img class="w-[159px] hover:scale-110 transition-all" src="{{ asset('images/navbar/'.(!$isReversed ? 'logo_white' : 'logo') .'.svg') }}" alt="logo">
-    </a>--}}
+    <a href="{{route('home')}}" class="z-50">
+        <img class="w-[80px] lg:w-[120px] hover:scale-110 transition-all" src="{{ asset('images/logo_acdv.png') }}" alt="logo">
+    </a>
+{{--
     <h2 class="pb-px text-2xl md:text-3xl lg:text-4xl hover:scale-105 transition-all duration-300 @if($isReversed) text-indigo-950 @else text-white @endif"><a href="/">Au Chœur des Voix</a></h2>
+--}}
     <ul id="desktop-menu" class="hidden invisible md:flex md:visible md:justify-end text-white text-[15px] lg:text-2xl md:w-[460px]">
         <li @class(['relative py-4 px-6 w-fit font-normal text-lg font-outfit before:transition-all before:duration-500 before:origin-left before:scale-0 before:absolute before:bottom-0 before:left-0 before:right-0 before:right-[50%] before:translate-x-1/2 before:h-[1px] hover:before:scale-100 '. (!$isReversed ? 'text-white/60 before:bg-white' : 'text-black before:bg-dark-pink'), (!$isReversed ? '!font-bold !text-white' : '!font-bold !text-dark-pink') => Request::route()->getName() === 'home'])>
             <a href="{{route('home')}}">Accueil</a>
